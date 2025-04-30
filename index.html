@@ -1,26 +1,563 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>build-future-spaces</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shapes n' Shades Design Studio</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Favicon -->
+  <link rel="icon" href="public/lovable-uploads/4668d095-ac22-4dae-9add-7817b7223bb3.png" type="image/png">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#page-top">
+        <img src="public/lovable-uploads/4668d095-ac22-4dae-9add-7817b7223bb3.png" alt="Shapes n' Shades Logo" height="60">
+        <span class="d-none d-lg-inline-block ms-2">Shapes n' Shades Design Studio</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars ms-1"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto py-4 py-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#portfolio">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-    <meta property="og:title" content="build-future-spaces" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  <!-- Hero Section -->
+  <header class="masthead" id="home">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-8 col-xl-7">
+          <div class="text-white">
+            <h1 class="display-3 fw-bold mb-3">Designing Spaces That <span class="text-accent">Inspire</span></h1>
+            <p class="lead mb-5">We create innovative architectural solutions that transform environments and enhance the way people live, work, and interact.</p>
+            <div class="d-grid gap-3 d-sm-flex">
+              <a class="btn btn-primary btn-lg px-5 py-3" href="#portfolio">View Our Work</a>
+              <a class="btn btn-outline-light btn-lg px-5 py-3" href="#contact">Get In Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="scroll-down" href="#about">
+      <i class="fas fa-arrow-down bounce"></i>
+    </a>
+  </header>
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-  </head>
+  <!-- About Section -->
+  <section class="page-section bg-light" id="about">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 order-lg-2 mb-5 mb-lg-0">
+          <div class="row g-3">
+            <div class="col-6">
+              <div class="image-hover rounded overflow-hidden shadow mb-3">
+                <img class="img-fluid" src="https://placeholder-url-1.jpg" alt="Modern building exterior">
+              </div>
+              <div class="image-hover rounded overflow-hidden shadow">
+                <img class="img-fluid" src="https://placeholder-url-2.jpg" alt="Interior design">
+              </div>
+            </div>
+            <div class="col-6 pt-3">
+              <div class="image-hover rounded overflow-hidden shadow mb-3">
+                <img class="img-fluid" src="https://placeholder-url-3.jpg" alt="Architectural detail">
+              </div>
+              <div class="image-hover rounded overflow-hidden shadow">
+                <img class="img-fluid" src="https://placeholder-url-4.jpg" alt="Urban landscape">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <div class="about-content">
+            <h2 class="section-heading">Our Approach to <span class="text-primary">Architecture</span></h2>
+            <p class="lead">Founded in 2021, Shapes n' Shades Design Studio is a forward-thinking architectural studio dedicated to creating meaningful and sustainable spaces that positively impact people's lives.</p>
+            <p class="mb-4">Our collaborative design process combines innovative thinking with practical solutions. We work closely with our clients to understand their vision and needs, while considering the environmental, cultural, and social aspects of each project.</p>
+            
+            <div class="row g-0 text-center mb-4">
+              <div class="col-md-3 col-6 p-3">
+                <div class="stats-item">
+                  <div class="display-6 fw-bold text-primary">45+</div>
+                  <p class="text-muted">Projects Completed</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 p-3">
+                <div class="stats-item">
+                  <div class="display-6 fw-bold text-primary">12</div>
+                  <p class="text-muted">Awards Won</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 p-3">
+                <div class="stats-item">
+                  <div class="display-6 fw-bold text-primary">15</div>
+                  <p class="text-muted">Team Members</p>
+                </div>
+              </div>
+              <div class="col-md-3 col-6 p-3">
+                <div class="stats-item">
+                  <div class="display-6 fw-bold text-primary">8</div>
+                  <p class="text-muted">Countries Served</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <body>
-    <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+  <!-- Services Section -->
+  <section class="page-section bg-white" id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Our <span class="text-primary">Services</span></h2>
+        <p class="text-muted">We offer a comprehensive range of architectural and design services to meet the unique needs of each project.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h4 class="my-3">Commercial Design</h4>
+            <p class="text-muted">Creating innovative workspaces and commercial buildings that enhance productivity and reflect brand identities.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h4 class="my-3">Residential Architecture</h4>
+            <p class="text-muted">Designing beautiful, functional homes that respond to clients' needs and enhance their quality of life.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon">
+              <i class="fas fa-tree"></i>
+            </div>
+            <h4 class="my-3">Landscape Integration</h4>
+            <p class="text-muted">Harmonizing architecture with natural surroundings to create cohesive and sustainable environments.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon">
+              <i class="fas fa-city"></i>
+            </div>
+            <h4 class="my-3">Urban Planning</h4>
+            <p class="text-muted">Developing thoughtful urban strategies that foster community engagement and sustainable growth.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h4 class="my-3">Sustainable Design</h4>
+            <p class="text-muted">Implementing eco-friendly solutions that minimize environmental impact while maximizing energy efficiency.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="service-card h-100">
+            <div class="service-icon">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <h4 class="my-3">Interior Design</h4>
+            <p class="text-muted">Crafting interior spaces that balance aesthetics with functionality to create memorable experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section class="page-section bg-light" id="portfolio">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Our <span class="text-primary">Projects</span></h2>
+        <p class="text-muted">Explore our diverse portfolio of architectural projects spanning various scales and typologies.</p>
+      </div>
+      
+      <div class="portfolio-filters text-center mb-4">
+        <button type="button" class="btn btn-sm btn-outline-dark m-1 active" data-filter="*">All Projects</button>
+        <button type="button" class="btn btn-sm btn-outline-dark m-1" data-filter=".commercial">Commercial</button>
+        <button type="button" class="btn btn-sm btn-outline-dark m-1" data-filter=".residential">Residential</button>
+        <button type="button" class="btn btn-sm btn-outline-dark m-1" data-filter=".landscape">Landscape</button>
+        <button type="button" class="btn btn-sm btn-outline-dark m-1" data-filter=".urban">Urban</button>
+      </div>
+      
+      <div class="row portfolio-container g-4">
+        <div class="col-md-6 col-lg-4 portfolio-item commercial">
+          <div class="portfolio-card">
+            <div class="image-hover">
+              <img class="img-fluid" src="https://placeholder-url-5.jpg" alt="Glass Pavilion">
+            </div>
+            <div class="portfolio-caption">
+              <h4>Glass Pavilion</h4>
+              <p class="text-muted">A modern commercial space featuring extensive use of glass and natural light.</p>
+              <span class="badge bg-light text-dark">Commercial</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item residential">
+          <div class="portfolio-card">
+            <div class="image-hover">
+              <img class="img-fluid" src="https://placeholder-url-6.jpg" alt="Hillside Residence">
+            </div>
+            <div class="portfolio-caption">
+              <h4>Hillside Residence</h4>
+              <p class="text-muted">Luxury residence designed to blend with its natural surroundings.</p>
+              <span class="badge bg-light text-dark">Residential</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item landscape">
+          <div class="portfolio-card">
+            <div class="image-hover">
+              <img class="img-fluid" src="https://placeholder-url-7.jpg" alt="Urban Park Renewal">
+            </div>
+            <div class="portfolio-caption">
+              <h4>Urban Park Renewal</h4>
+              <p class="text-muted">Revitalization of an urban park with sustainable materials.</p>
+              <span class="badge bg-light text-dark">Landscape</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item commercial">
+          <div class="portfolio-card">
+            <div class="image-hover">
+              <img class="img-fluid" src="https://placeholder-url-8.jpg" alt="Downtown Office Tower">
+            </div>
+            <div class="portfolio-caption">
+              <h4>Downtown Office Tower</h4>
+              <p class="text-muted">A sleek, energy-efficient office tower in the city skyline.</p>
+              <span class="badge bg-light text-dark">Commercial</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item residential">
+          <div class="portfolio-card">
+            <div class="image-hover">
+              <img class="img-fluid" src="https://placeholder-url-9.jpg" alt="Minimalist Loft">
+            </div>
+            <div class="portfolio-caption">
+              <h4>Minimalist Loft</h4>
+              <p class="text-muted">Urban loft apartment renovation emphasizing open space.</p>
+              <span class="badge bg-light text-dark">Residential</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 portfolio-item urban">
+          <div class="portfolio-card">
+            <div class="image-hover">
+              <img class="img-fluid" src="https://placeholder-url-10.jpg" alt="Waterfront Plaza">
+            </div>
+            <div class="portfolio-caption">
+              <h4>Waterfront Plaza</h4>
+              <p class="text-muted">Mixed-use development connecting the city to its waterfront.</p>
+              <span class="badge bg-light text-dark">Urban Planning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-5">
+        <a href="#contact" class="btn btn-primary btn-lg">Start Your Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="page-section bg-white" id="team">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Meet Our <span class="text-primary">Team</span></h2>
+        <p class="text-muted">Our diverse team of architects and designers brings together a wealth of experience and fresh perspectives.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="image-hover rounded-circle mb-3">
+              <img class="img-fluid rounded-circle" src="https://placeholder-url-11.jpg" alt="Alexandra Chen">
+            </div>
+            <h4>Alexandra Chen</h4>
+            <p class="text-primary">Principal Architect & Founder</p>
+            <p class="text-muted small">With over 15 years of experience, Alexandra leads our team with a vision for innovative and sustainable architecture.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="image-hover rounded-circle mb-3">
+              <img class="img-fluid rounded-circle" src="https://placeholder-url-12.jpg" alt="Marcus Wright">
+            </div>
+            <h4>Marcus Wright</h4>
+            <p class="text-primary">Design Director</p>
+            <p class="text-muted small">Marcus specializes in urban design and brings his expertise in creating human-centered spaces to every project.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="image-hover rounded-circle mb-3">
+              <img class="img-fluid rounded-circle" src="https://placeholder-url-13.jpg" alt="Sophia Rodriguez">
+            </div>
+            <h4>Sophia Rodriguez</h4>
+            <p class="text-primary">Sustainable Design Specialist</p>
+            <p class="text-muted small">Sophia is passionate about eco-friendly architecture and leads our sustainability initiatives across all projects.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <div class="team-member">
+            <div class="image-hover rounded-circle mb-3">
+              <img class="img-fluid rounded-circle" src="https://placeholder-url-14.jpg" alt="Daniel Kim">
+            </div>
+            <h4>Daniel Kim</h4>
+            <p class="text-primary">Senior Architect</p>
+            <p class="text-muted small">Daniel brings technical expertise and creative problem-solving to complex architectural challenges.</p>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="far fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="careers-banner bg-light rounded p-4 mt-5">
+        <div class="row align-items-center">
+          <div class="col-md-8">
+            <h3>Join Our Team</h3>
+            <p class="mb-md-0">We're always looking for talented and passionate individuals to join our growing team. If you're interested in being part of innovative architectural projects, we'd love to hear from you.</p>
+          </div>
+          <div class="col-md-4 text-md-end">
+            <a href="#contact" class="btn btn-primary">View Open Positions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="page-section bg-light" id="contact">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="section-heading">Get In <span class="text-primary">Touch</span></h2>
+        <p class="text-muted">Have a project in mind or want to learn more about our services? We'd love to hear from you.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="contact-info bg-white p-4 p-md-5 h-100 rounded shadow-sm">
+            <h3 class="mb-4">Contact Information</h3>
+            
+            <div class="d-flex mb-4">
+              <div class="contact-icon me-3">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div>
+                <h5>Our Office</h5>
+                <p class="text-muted">123 Design Avenue<br>New York, NY 10001</p>
+              </div>
+            </div>
+            
+            <div class="d-flex mb-4">
+              <div class="contact-icon me-3">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <h5>Phone</h5>
+                <p class="text-muted">+1 (555) 123-4567</p>
+              </div>
+            </div>
+            
+            <div class="d-flex mb-4">
+              <div class="contact-icon me-3">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <h5>Email</h5>
+                <p class="text-muted">info@shapesnshades.com<br>careers@shapesnshades.com</p>
+              </div>
+            </div>
+            
+            <div class="d-flex mb-4">
+              <div class="contact-icon me-3">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div>
+                <h5>Working Hours</h5>
+                <p class="text-muted">Monday - Friday: 9AM - 6PM<br>Saturday: By appointment</p>
+              </div>
+            </div>
+            
+            <h5 class="mt-5 mb-3">Follow Us</h5>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-lg-7">
+          <div class="contact-form bg-white p-4 p-md-5 rounded shadow-sm">
+            <h3 class="mb-4">Send Us a Message</h3>
+            <form id="contactForm">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                    <label for="name">Your Name*</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                    <label for="email">Your Email*</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="tel" class="form-control" id="phone" placeholder="Phone Number">
+                    <label for="phone">Phone Number</label>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <select class="form-select" id="subject" required>
+                      <option value="" selected disabled>Select a subject</option>
+                      <option value="Project Inquiry">Project Inquiry</option>
+                      <option value="Consultation Request">Consultation Request</option>
+                      <option value="Career Opportunities">Career Opportunities</option>
+                      <option value="General Question">General Question</option>
+                    </select>
+                    <label for="subject">Subject*</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                    <label for="message">Your Message*</label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary btn-lg w-100" type="submit" id="submitButton">
+                    Send Message
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer bg-dark text-white">
+    <div class="container py-5">
+      <div class="row gy-4">
+        <div class="col-lg-4">
+          <div class="footer-brand mb-3">
+            <img src="public/lovable-uploads/4668d095-ac22-4dae-9add-7817b7223bb3.png" alt="Shapes n' Shades Logo" height="60">
+            <span class="ms-2">Shapes n' Shades Design Studio</span>
+          </div>
+          <p class="text-muted mb-4">Creating innovative architectural solutions that transform environments and enhance the way people live, work, and interact.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3">Services</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#services">Commercial Design</a></li>
+            <li><a href="#services">Residential Architecture</a></li>
+            <li><a href="#services">Urban Planning</a></li>
+            <li><a href="#services">Interior Design</a></li>
+            <li><a href="#services">Sustainable Design</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-2 col-md-6">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="list-unstyled footer-links">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#team">Careers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-lg-4">
+          <h5 class="mb-3">Newsletter</h5>
+          <p class="text-muted mb-3">Subscribe to receive updates on our latest projects and news.</p>
+          <form id="newsletterForm" class="mb-3">
+            <div class="input-group">
+              <input type="email" class="form-control" placeholder="Your email address" required>
+              <button class="btn btn-primary" type="submit">Subscribe</button>
+            </div>
+          </form>
+          <p class="small text-muted">By subscribing, you agree to our Privacy Policy.</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="footer-bottom py-3 border-top border-secondary">
+      <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+        <p class="text-muted mb-2 mb-md-0">&copy; <span id="currentYear">2023</span> Shapes n' Shades Design Studio. All rights reserved.</p>
+        <div class="d-flex">
+          <a href="#" class="text-muted me-3">Privacy Policy</a>
+          <a href="#" class="text-muted me-3">Terms of Service</a>
+          <a href="#page-top" class="text-muted back-to-top">
+            <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap & jQuery JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Isotope for Portfolio Filtering -->
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <!-- Custom JS -->
+  <script src="js/scripts.js"></script>
+</body>
 </html>

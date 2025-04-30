@@ -1,0 +1,448 @@
+
+/* 
+   Shapes n' Shades Design Studio
+   Custom Styles
+*/
+
+:root {
+  --primary: #800000;      /* Maroon - from the logo background */
+  --primary-dark: #600000; /* Darker maroon for hover states */
+  --primary-light: #a04040; /* Lighter maroon */
+  --accent: #e5d6c6;       /* Beige - from the logo text */
+  --text-dark: #333333;    /* Dark gray for text */
+  --text-light: #ffffff;   /* White for light text */
+  --gray-light: #f8f9fa;   /* Light gray for backgrounds */
+  --gray-medium: #e9ecef;  /* Medium gray */
+  --gray-dark: #343a40;    /* Dark gray for footer */
+}
+
+/* General Styles */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+}
+
+.section-heading {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: var(--primary-dark);
+  border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.text-accent {
+  color: var(--accent);
+}
+
+.page-section {
+  padding: 6rem 0;
+}
+
+@media (max-width: 992px) {
+  .page-section {
+    padding: 4rem 0;
+  }
+  
+  .section-heading {
+    font-size: 2rem;
+  }
+}
+
+/* Navbar */
+#mainNav {
+  transition: padding 0.3s ease, background-color 0.3s ease;
+  background-color: transparent;
+  padding: 1.5rem 0;
+}
+
+#mainNav .navbar-brand {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  color: white;
+  font-weight: 500;
+  padding: 0.75rem 1rem;
+  transition: color 0.3s ease;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: var(--accent);
+}
+
+#mainNav.navbar-shrink {
+  background-color: white;
+  padding: 0.75rem 0;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+#mainNav.navbar-shrink .navbar-brand,
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link {
+  color: var(--text-dark);
+}
+
+#mainNav.navbar-shrink .navbar-nav .nav-item .nav-link:hover {
+  color: var(--primary);
+}
+
+#mainNav .navbar-toggler {
+  color: white;
+  border: none;
+}
+
+#mainNav.navbar-shrink .navbar-toggler {
+  color: var(--text-dark);
+}
+
+@media (max-width: 992px) {
+  #mainNav {
+    background-color: white;
+    padding: 0.75rem 0;
+  }
+  
+  #mainNav .navbar-brand,
+  #mainNav .navbar-nav .nav-item .nav-link {
+    color: var(--text-dark);
+  }
+  
+  #mainNav .navbar-nav .nav-item .nav-link:hover {
+    color: var(--primary);
+  }
+  
+  #mainNav .navbar-toggler {
+    color: var(--text-dark);
+  }
+}
+
+/* Hero Section */
+.masthead {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  padding: 15rem 0;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.3)), url('https://placeholder-url-hero.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+}
+
+.masthead h1 {
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.masthead .btn {
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.5rem;
+  z-index: 2;
+  transition: all 0.3s;
+}
+
+.scroll-down:hover {
+  color: var(--accent);
+  transform: translateX(-50%) translateY(5px);
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-15px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* About Section */
+.about-content {
+  padding-right: 1.5rem;
+}
+
+.stats-item {
+  padding: 1rem;
+  border-radius: 0.25rem;
+  transition: all 0.3s ease;
+}
+
+.stats-item:hover {
+  transform: translateY(-5px);
+}
+
+.image-hover {
+  overflow: hidden;
+}
+
+.image-hover img {
+  transition: transform 0.5s ease;
+}
+
+.image-hover:hover img {
+  transform: scale(1.05);
+}
+
+/* Services Section */
+.service-card {
+  text-align: center;
+  padding: 2rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+/* Portfolio Section */
+.portfolio-filters .btn {
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.portfolio-filters .btn.active {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: white;
+}
+
+.portfolio-card {
+  margin-bottom: 1.5rem;
+  background-color: white;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: all 0.3s ease;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-caption {
+  padding: 1.5rem;
+}
+
+.portfolio-caption h4 {
+  margin-bottom: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.portfolio-card:hover .portfolio-caption h4 {
+  color: var(--primary);
+}
+
+/* Team Section */
+.team-member {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.team-member img {
+  width: 14rem;
+  height: 14rem;
+  object-fit: cover;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  margin-bottom: 1rem;
+}
+
+.team-member h4 {
+  margin-top: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--gray-light);
+  color: var(--text-dark);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+.careers-banner {
+  border-left: 4px solid var(--primary);
+}
+
+/* Contact Section */
+.contact-icon {
+  min-width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-light);
+  color: var(--primary);
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+.contact-form .form-control,
+.contact-form .form-select {
+  border: 1px solid var(--gray-medium);
+  padding: 0.75rem;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.25rem rgba(128, 0, 0, 0.25);
+}
+
+.contact-info, .contact-form {
+  height: 100%;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--gray-dark);
+  color: white;
+}
+
+.footer-brand {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links li {
+  margin-bottom: 0.75rem;
+}
+
+.footer-links a {
+  color: #adb5bd;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.footer .social-icons {
+  justify-content: flex-start;
+}
+
+.footer .social-icons a {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.footer .social-icons a:hover {
+  background-color: var(--primary);
+}
+
+.back-to-top {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: var(--primary);
+  color: white !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .masthead {
+    padding: 10rem 0;
+  }
+  
+  .masthead h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-content {
+    padding-right: 0;
+  }
+  
+  .service-card,
+  .portfolio-card,
+  .team-member {
+    margin-bottom: 2rem;
+  }
+}
