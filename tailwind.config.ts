@@ -64,10 +64,10 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				arch: {
-					'dark': '#2C3639',
-					'medium': '#3F4E4F',
-					'light': '#A27B5C',
-					'accent': '#DCD7C9'
+					'dark': '#600000',   /* Darker maroon for hover states */
+					'medium': '#800000', /* Maroon - primary color */
+					'light': '#a04040',  /* Lighter maroon */
+					'accent': '#e5d6c6'  /* Beige - accent color */
 				}
 			},
 			fontFamily: {

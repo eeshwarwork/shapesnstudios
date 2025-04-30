@@ -7,8 +7,8 @@
 
 @layer base {
   :root {
-    --background: 30 20% 97%;
-    --foreground: 240 10% 3.9%;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 20%;
 
     --card: 0 0% 100%;
     --card-foreground: 240 10% 3.9%;
@@ -16,7 +16,7 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    --primary: 28 34% 49%;
+    --primary: 0 60% 25%;
     --primary-foreground: 0 0% 98%;
 
     --secondary: 220 14% 96%;
@@ -25,7 +25,7 @@
     --muted: 240 4.8% 95.9%;
     --muted-foreground: 240 3.8% 46.1%;
 
-    --accent: 38 35% 89%;
+    --accent: 33 40% 84%;
     --accent-foreground: 24 9.8% 10%;
 
     --destructive: 0 84.2% 60.2%;
@@ -67,11 +67,11 @@
   }
 
   .btn-primary {
-    @apply bg-arch-light text-white px-6 py-3 rounded hover:bg-arch-medium transition-colors;
+    @apply bg-primary text-white px-6 py-3 rounded hover:bg-primary/80 transition-colors;
   }
   
   .btn-secondary {
-    @apply bg-transparent border border-arch-light text-arch-light px-6 py-3 rounded hover:bg-arch-light hover:text-white transition-colors;
+    @apply bg-transparent border border-primary text-primary px-6 py-3 rounded hover:bg-primary hover:text-white transition-colors;
   }
 
   .image-hover {
